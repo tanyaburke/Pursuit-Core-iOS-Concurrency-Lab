@@ -9,10 +9,14 @@
 import Foundation
 
 struct CountryListAPI{
-    static func getListOfCountries(completion: @escaping (Result<[CountryList],AppError>)->()) -> [CountryList]{
+    static func getListOfCountries(completion: @escaping (Result<[CountryList],AppError>)->()){
         let endPointURLString = "https://restcountries.eu/rest/v2/name/united"
-        let countryList = [CountryList]()
-        NetworkHelper.shared.performDataTask(with:endPointURLString) { (result) in
+        guard let url = URL(string: endPointURLString) else{
+           completion (.failure(.badURL(endPointURLString)))
+            return
+        }
+//        let countryList = [CountryList]()
+        NetworkHelper.shared.performDataTask(with:url) { (result) in
             switch result{
             case .failure(let appError):
                 completion(.failure(.networkClientError(appError)))
@@ -25,6 +29,5 @@ struct CountryListAPI{
                 }
             }
         }
-        return countryList
     }
 }

@@ -17,10 +17,12 @@ extension UIImageView {
         activityIndicator.center = center
         addSubview(activityIndicator)
         activityIndicator.startAnimating()
-        
-        NetworkHelper.shared.performDataTask(with: urlString) { [weak activityIndicator] (result) in
+        guard let url = URL(string: urlString) else {
+            completionHandler(.failure(.badURL(urlString)))
+            return}
+        NetworkHelper.shared.performDataTask(with: url) { (result) in
             DispatchQueue.main.async {
-                activityIndicator?.stopAnimating()
+                activityIndicator.stopAnimating()
             }
             switch result{
             case .failure(let appError):

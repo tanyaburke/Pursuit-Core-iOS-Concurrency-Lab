@@ -20,6 +20,7 @@
 		2E1E342923C3D95A00AC8423 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E342823C3D95A00AC8423 /* NetworkHelper.swift */; };
 		2E1E342B23C3D9B800AC8423 /* ContryListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E342A23C3D9B800AC8423 /* ContryListAPI.swift */; };
 		2E1E342D23C3DA0800AC8423 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E342C23C3DA0800AC8423 /* UIImage+Extension.swift */; };
+		2E3D07FA23CE861F00E0C4FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D07F923CE861F00E0C4FB /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		2E1E342823C3D95A00AC8423 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		2E1E342A23C3D9B800AC8423 /* ContryListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryListAPI.swift; sourceTree = "<group>"; };
 		2E1E342C23C3DA0800AC8423 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		2E3D07F923CE861F00E0C4FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,19 +93,20 @@
 		2E0DA95123B8D68400E327A1 /* ConcurrencyLab */ = {
 			isa = PBXGroup;
 			children = (
-				2E0DA95223B8D68400E327A1 /* AppDelegate.swift */,
-				2E0DA95423B8D68400E327A1 /* SceneDelegate.swift */,
-				2E1E342223C3D80400AC8423 /* CountrCell.swift */,
 				2E1E342623C3D8AA00AC8423 /* AppError.swift */,
 				2E1E342823C3D95A00AC8423 /* NetworkHelper.swift */,
 				2E1E342C23C3DA0800AC8423 /* UIImage+Extension.swift */,
 				2E1E342A23C3D9B800AC8423 /* ContryListAPI.swift */,
-				2E0DA95623B8D68400E327A1 /* ViewController.swift */,
 				2E1E342423C3D87A00AC8423 /* CountryListModel.swift */,
+				2E1E342223C3D80400AC8423 /* CountrCell.swift */,
+				2E0DA95623B8D68400E327A1 /* ViewController.swift */,
 				2E0DA95823B8D68400E327A1 /* Main.storyboard */,
+				2E0DA95223B8D68400E327A1 /* AppDelegate.swift */,
+				2E0DA95423B8D68400E327A1 /* SceneDelegate.swift */,
 				2E0DA95B23B8D68800E327A1 /* Assets.xcassets */,
 				2E0DA95D23B8D68800E327A1 /* LaunchScreen.storyboard */,
 				2E0DA96023B8D68800E327A1 /* Info.plist */,
+				2E3D07F923CE861F00E0C4FB /* TableViewCell.swift */,
 			);
 			path = ConcurrencyLab;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				2E1E342523C3D87A00AC8423 /* CountryListModel.swift in Sources */,
 				2E1E342D23C3DA0800AC8423 /* UIImage+Extension.swift in Sources */,
 				2E1E342B23C3D9B800AC8423 /* ContryListAPI.swift in Sources */,
+				2E3D07FA23CE861F00E0C4FB /* TableViewCell.swift in Sources */,
 				2E1E342723C3D8AA00AC8423 /* AppError.swift in Sources */,
 				2E0DA95323B8D68400E327A1 /* AppDelegate.swift in Sources */,
 				2E1E342323C3D80400AC8423 /* CountrCell.swift in Sources */,

@@ -18,7 +18,7 @@ class NetworkHelper {
         session = URLSession(configuration: .default)
     }
     
-    func performDataTask(with request: URLRequest, completion: @escaping (Result<Data, AppError>) -> ()) {
+    func performDataTask(with request: URL, completion: @escaping (Result<Data, AppError>) -> ()) {
         let dataTask = session.dataTask(with: request) {
             (data, response, error) in
             if let error = error{
